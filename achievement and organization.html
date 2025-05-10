@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievement and Organization</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(0, 255, 255, 0.1);
+      border-bottom: 1px solid #00ffff;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #00ffff;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00ffff44;
+    }
+
+    /* Tambahan untuk membuat link dalam card tidak biru dan tidak bergaris bawah */
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card a:hover h2 {
+      color: #ffffff;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .card h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #dddddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #00ffff33;
+      color: #999;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Achievement & Organization</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <a href="Achievement.html">
+        <h2>Achievement</h2>
+        <p>Some of my achievements.</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="Organization.html">
+        <h2>Organization</h2>
+        <p>Some organizations that I have been involved in.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achievements - Futuristic Theme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi saat scroll */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#0f0f1b] to-[#1a1a2e] text-white font-sans min-h-screen py-10 px-6 md:px-20">
+
+  <!-- Judul Halaman -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-wider text-cyan-400">
+      ACHIEVEMENTS
+    </h1>
+    <p class="text-gray-400 mt-2 text-lg">Beberapa pencapaian terbaik yang telah diraih</p>
+  </header>
+
+  <!-- Grid Prestasi -->
+  <main class="grid md:grid-cols-2 gap-8">
+    <!-- Card 1 -->
+    <div class="fade-up bg-[#22223b] border border-cyan-500 shadow-xl rounded-2xl hover:scale-105 transition-transform duration-300 p-6 space-y-3">
+      <h2 class="text-xl font-semibold text-cyan-300">cibubur national camp</h2>
+      <p class="text-sm text-gray-400">Mey 2018</p>
+      <p class="text-base text-gray-200">Achievements in contribution to Asian national camp [primary school]</p>
+    </div>
+
+    <!-- Card (Gambar Prambanan Area Camp Ditampilkan) -->
+<div class="fade-up bg-[#22223b] border border-cyan-500 shadow-xl rounded-2xl hover:scale-105 transition-transform duration-300 p-6 space-y-3">
+  <h2 class="text-xl font-semibold text-cyan-300">Prambanan Area Camp</h2>
+
+  <!-- Gambar Camp -->
+  <img src="https://i.postimg.cc/rFhBmhVF/Cuplikan-layar-2025-05-10-074320.png" alt="Prambanan Camp" class="rounded-lg w-full object-cover border border-cyan-700">
+
+  <!-- Deskripsi -->
+  <p class="text-base text-gray-200">Achievements in regional camp contributions [primary school]</p>
+  <p>november 2019</p>
+</div>
+
+
+     <!-- Card 3 (Gambar top 4 provincial level chess competitions Ditampilkan) -->
+<div class="fade-up bg-[#22223b] border border-cyan-500 shadow-xl rounded-2xl hover:scale-105 transition-transform duration-300 p-6 space-y-3">
+  <h2 class="text-xl font-semibold text-cyan-300">top 4 provincial level chess competitions</h2>
+
+  <!-- Gambar Choir -->
+  <img src="https://i.postimg.cc/9Mw64xWT/Cuplikan-layar-2025-05-10-094021.png" alt="Paduan Suara" class="rounded-lg w-full object-cover border border-cyan-700">
+
+  <!-- Deskripsi -->
+  <p class="text-base text-gray-200">Achievement in reaching top 4 in chess competition [elementary school]</p>
+  <p>december 2020</p>
+</div>
+
+    <!-- Card 4 (Gambar Choir Ditampilkan) -->
+<div class="fade-up bg-[#22223b] border border-cyan-500 shadow-xl rounded-2xl hover:scale-105 transition-transform duration-300 p-6 space-y-3">
+  <h2 class="text-xl font-semibold text-cyan-300">3rd place choir</h2>
+
+  <!-- Gambar Choir -->
+  <img src="https://i.postimg.cc/SxdJJbXY/Cuplikan-layar-2025-05-09-214355.png" alt="Paduan Suara" class="rounded-lg w-full object-cover border border-cyan-700">
+
+  <!-- Deskripsi -->
+  <p class="text-base text-gray-200">Winning the choir competition [ junior high school]</p>
+  <p>april 2023</p>
+</div>
+ 
+
+      
+    </div>
+  </main>
+
+  <!-- Script untuk animasi scroll -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
